@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>ciForm Demo</title>
+	
+	<link rel="stylesheet" href="page.css" />
+	
+	<link rel="stylesheet" href="default-theme.css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script src="jquery.ciform.js"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('form').ciform();
+		
+		});
+
+	</script>
+
+</head>
+<body>
+	<form action="#">
+		<div class="row">
+			<label for="Text">Text</label> <input type="text" value="Text" name="text" id="Text"/>
+		</div>
+		<div class="row">
+			<label for="SingleSelect">Single Select</label>
+			<select name="" id="SingleSelect">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<label for="MultiSelect">Multi Select</label>
+			<select name="multiSelect" id="MultiSelect" multiple="multiple" size="2">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+				<option value="5">Option 5</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<label for="Textarea">Textarea</label>
+			<textarea name="textarea"  cols="30" rows="10" id="Textarea">Textarea</textarea>
+		</div>
+		
+		<div class="row">
+			<input type="radio" name="radio" value="radio 1" id="Radio1"/>
+			<label for="Radio1">Radio 1</label>
+			<input type="radio" name="radio" value="radio 2" id="Radio2"/>
+			<label for="Radio1">Radio 2</label>
+		</div>
+		
+		<div class="row">
+			<input type="checkbox" name="checkbox" value="checkbox 1" id="Checkbox1"/>
+			<label for="Checkbox1">Checkbox 1</label>
+			<input type="checkbox" name="checkbox" value="checkbox 2" id="Checkbox2"/>
+			<label for="Checkbox1">Checkbox 2</label>
+		</div>
+		
+		<div class="row">
+			<input type="submit" name="submit" value="Submit"/>
+			<input type="reset" name="reset" value="Reset"/>
+			<input type="button" name="button" value="Button"/>
+		</div>
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+input.ciText, select.ciSelect, textarea.ciTextarea{
+    
+    font-family: inherit; 
+    font-size: inherit;
+    
+    margin: 0 0 0px 0; 
+    padding: 3px 4px; 
+    border: 1px solid #bbb;
+    
+    -moz-border-radius: 4px; 
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+    
+    -moz-box-shadow: 0px 0px 1px #CCC;
+    -webkit-box-shadow: 1px 1px 1px #CCC;
+    box-shadow: 1px 1px 1px #CCC;
+    
+    background-color: #f5f5f5;
+
+    
+}
+
+input.ciText:focus, select.ciSelect:focus, textarea.ciTextarea:focus{ 
+
+    outline: none; 
+    padding: 2px 3px; 
+    border: 2px solid #006699; 
+    background-color: #EDEEEE;
+    
+}
+
+input.ciSubmit, input.ciReset, input.ciButton{
+
+    font-family: inherit; 
+    font-size: inherit;
+    margin: 0 0 0px 0; 
+    padding: 3px 4px; 
+    border: 1px solid #bbb; 
+    
+    -moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+    
+    -moz-box-shadow: 0px 0px 1px #CCC;
+    -webkit-box-shadow: 1px 1px 1px #CCC;
+    box-shadow: 1px 1px 1px #CCC;
+    
+    cursor: pointer;
+}
+
+input.ciSubmit:hover, input.ciReset:hover, input.ciButton:hover{
+    background-color: #CCC;
+    border: 1px solid #006699; 
+}
